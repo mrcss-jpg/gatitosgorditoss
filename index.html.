@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gatitos Gorditos</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: #fff8f0;
+      color: #5a3e1b;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #f5c27a;
+      padding: 30px 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+      letter-spacing: 3px;
+    }
+    nav {
+      background: #f9e1b0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px 0;
+      font-weight: bold;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5a3e1b;
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #d49b3b;
+      color: white;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      border-bottom: 2px solid #d49b3b;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+    .gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      background: #f5c27a;
+      text-align: center;
+      padding: 15px 10px;
+      color: #5a3e1b;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      font-weight: bold;
+      box-shadow: 0 -3px 6px rgba(0,0,0,0.1);
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 2px solid #d49b3b;
+      border-radius: 8px;
+      font-size: 1em;
+      font-family: inherit;
+    }
+    button {
+      background-color: #d49b3b;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1.1em;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #b07523;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GatitosGorditos.com</h1>
+    <p>El hogar de los gatos más adorables y sus leyendas 🐾</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#historia">Historia</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+  <main>
+    <section id="inicio">
+      <h2>Bienvenidos a Gatitos Gorditos</h2>
+      <p>En este sitio encontrarás historias, fotos y todo lo relacionado con nuestros peluditos favoritos: ¡los gatos gorditos!</p>
+    </section>
+    <section id="historia">
+      <h2>La Historia de los Dos Reyes Gatos</h2>
+      <p>Hace mucho tiempo, existían dos reyes: <strong>Bigotes el Sabio</strong> y <strong>Pelusa la Valiente</strong>. Gobernaban Gatolandia con paz y ronroneo mágico.</p>
+      <p>Hoy, sus descendientes siguen durmiendo 18 horas al día, comiendo atún premium y dominando el sofá.</p>
+    </section>
+    <section id="galeria">
+      <h2>Galería</h2>
+      <div class="gallery">
+        <img src="https://placekitten.com/150/150" alt="Gatito 1" />
+        <img src="https://placekitten.com/151/150" alt="Gatito 2" />
+        <img src="https://placekitten.com/150/151" alt="Gatito 3" />
+      </div>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu email" required />
+        <textarea rows="4" placeholder="Cuéntanos sobre tu gato..."></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 GatitosGorditos.com - Todos los derechos reservados 🐾</p>
+  </footer>
+</body>
+</html>
